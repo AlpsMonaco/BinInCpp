@@ -1,2 +1,2 @@
 # BinInCpp
-embed bin file in .h&amp;.cpp
+Generate any binary file's .h&.cpp.  
