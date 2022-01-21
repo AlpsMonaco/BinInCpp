@@ -1,0 +1,48 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "creator mode",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/EHsc",
+				"/nologo",
+				"/Fe:",
+				"${workspaceFolder}\\main.exe",
+				"main.cpp",
+				"stringext.cpp",
+				"filepath.cpp",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+		},
+		{
+			"type": "cppbuild",
+			"label": "release mode",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/EHsc",
+				"/nologo",
+				"/Fe:",
+				"${workspaceFolder}\\main.exe",
+				"main.cpp",
+				"7z.cpp",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+		}
+	]
+}
